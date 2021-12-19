@@ -1,5 +1,27 @@
+@import 'mixin';
+@import 'var';
+
 body{
+    margin: 0;
+    padding: 0;
+    background-color: $bg-color;
+}
+
+.main_header{
     text-align: center;
-    background-color: aliceblue;
     margin-top: 20px;
+
+    h1 {
+        color: rgb(119, 113, 113);
+    &:hover {
+        @include commoncode(.2rem);
+    }
+}
+
+    h3 {
+        color: rgb(247, 164, 164);
+        &:hover {
+            @include commoncode(.1rem);
+        }
+    }
 }
